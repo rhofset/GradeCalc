@@ -75,7 +75,6 @@ elif tgrade > 100:
 	print("You don't need any advice! :-)")
 print()
 
-
 #test1
 # What grade to get next so your average is going up one step
 if tgrade < 40:
