@@ -76,6 +76,7 @@ elif tgrade > 100:
 print()
 
 
+#test1
 # What grade to get next so your average is going up one step
 if tgrade < 40:
 	print("You need a minimum score off", + (40 * 2) - tgrade, "to get a average of E")
