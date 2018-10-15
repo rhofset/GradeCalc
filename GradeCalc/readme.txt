@@ -17,4 +17,4 @@ Version 0.2.0
 	* check if you are in range when you are typing in a score. (not over 100/30 or whatever the max score is.)
 
 Version unknown:
-	* read and save from file
+	* read and save from file 

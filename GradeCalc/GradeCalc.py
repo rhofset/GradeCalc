@@ -57,7 +57,8 @@ elif tgrade > 90 and tgrade < 100:
 elif tgrade > 100:
 	print("No Grade, You have done something wrong!")
 
-# What grade you need to get in next course to be at the same level
+
+# What grade you need to get in next course to be at the same level 
 print()
 if tgrade < 40:
 	print("You need a minimum score off", + (40 * 2) - tgrade, "to keep your current to get a E")
