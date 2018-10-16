@@ -1,3 +1,6 @@
+Version 0.1.1
+Made all numbers that is printed to have only two digits after comma.
+
 Version 0.1.0 - 15.10.2018 *First version*
 Grade 1:
 	Problem based learning

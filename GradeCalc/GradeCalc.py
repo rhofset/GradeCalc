@@ -4,7 +4,7 @@ __author__ = "Runar Hofset"
 __copyright__ = "Copyright 2018, Runar Hofset"
 __credits__ = ["Runar Hofset"]
 __license__ = "GPL"
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __maintainer__ = "Runar Hofset"
 __email__ = "rhofset@gmail.com"
 __status__ = "Development"
@@ -38,7 +38,7 @@ if PBL1 > 100:
 # print to screen the total score/grade
 tgrade = PBL1
 print()
-print("You got", + tgrade, "of 100")
+print("You got", + round(tgrade, 2), "of 100")
 
 # What letter Grade it relate to (A, B, C, D, E or F)
 print()
@@ -61,17 +61,17 @@ elif tgrade > 100:
 # What grade you need to get in next course to be at the same level 
 print()
 if tgrade < 40:
-	print("You need a minimum score off", + (40 * 2) - tgrade, "to keep your current to get a E")
+	print("You need a minimum score off", + (40 * 2) - round(tgrade, 2), "to keep your current to get a E")
 elif tgrade > 40 and tgrade < 49.9:
-	print("You need a minimum score off", + (40 * 2) - tgrade, "to keep your current E after the next course.")
+	print("You need a minimum score off", + (40 * 2) - round(tgrade, 2), "to keep your current E after the next course.")
 elif tgrade > 50 and tgrade < 59.9:
-	print("You need a minimum score off", + (50 * 2) - tgrade, "to keep your current D after the next course.")
+	print("You need a minimum score off", + (50 * 2) - round(tgrade, 2), "to keep your current D after the next course.")
 elif tgrade > 60 and tgrade < 79.9:
-	print("You need a minimum score off", + (60 * 2) - tgrade, "to keep your current C after the next course.")
+	print("You need a minimum score off", + (60 * 2) - round(tgrade, 2), "to keep your current C after the next course.")
 elif tgrade > 80 and tgrade < 89.9:
-	print("You need a minimum score off", + (80 * 2) - tgrade, "to keep your current B after the next course.")
+	print("You need a minimum score off", + (80 * 2) - round(tgrade, 2), "to keep your current B after the next course.")
 elif tgrade > 90 and tgrade < 100:
-	print("You need a minimum score off", + (90 * 2) - tgrade, "to keep your current A after the next course.")
+	print("You need a minimum score off", + (90 * 2) - round(tgrade, 2), "to keep your current A after the next course.")
 elif tgrade > 100:
 	print("You don't need any advice! :-)")
 print()
@@ -79,25 +79,25 @@ print()
 #test1
 # What grade to get next so your average is going up one step
 if tgrade < 40:
-	print("You need a minimum score off", + (40 * 2) - tgrade, "to get a average of E")
-	print("You need a minimum score off", + (50 * 2) - tgrade, "to get a average of D.")
-	print("You need a minimum score off", + (60 * 2) - tgrade, "to get a average of C.")
-	print("You need a minimum score off", + (80 * 2) - tgrade, "to get a average of B.")
-	print("You need a minimum score off", + (90 * 2) - tgrade, "to get a average of A.")
+	print("You need a minimum score off", + (40 * 2) - round(tgrade, 2), "to get a average of E")
+	print("You need a minimum score off", + (50 * 2) - round(tgrade, 2), "to get a average of D.")
+	print("You need a minimum score off", + (60 * 2) - round(tgrade, 2), "to get a average of C.")
+	print("You need a minimum score off", + (80 * 2) - round(tgrade, 2), "to get a average of B.")
+	print("You need a minimum score off", + (90 * 2) - round(tgrade, 2), "to get a average of A.")
 elif tgrade > 40 and tgrade < 49.9:
-	print("You need a minimum score off", + (50 * 2) - tgrade, "to get a average of D.")
-	print("You need a minimum score off", + (60 * 2) - tgrade, "to get a average of C.")
-	print("You need a minimum score off", + (80 * 2) - tgrade, "to get a average of B.")
-	print("You need a minimum score off", + (90 * 2) - tgrade, "to get a average of A.")
+	print("You need a minimum score off", + (50 * 2) - round(tgrade, 2), "to get a average of D.")
+	print("You need a minimum score off", + (60 * 2) - round(tgrade, 2), "to get a average of C.")
+	print("You need a minimum score off", + (80 * 2) - round(tgrade, 2), "to get a average of B.")
+	print("You need a minimum score off", + (90 * 2) - round(tgrade, 2), "to get a average of A.")
 elif tgrade > 50 and tgrade < 59.9:
-	print("You need a minimum score off", + (60 * 2) - tgrade, "to get a average of C.")
-	print("You need a minimum score off", + (80 * 2) - tgrade, "to get a average of B.")
-	print("You need a minimum score off", + (90 * 2) - tgrade, "to get a average of A.")
+	print("You need a minimum score off", + (60 * 2) - round(tgrade, 2), "to get a average of C.")
+	print("You need a minimum score off", + (80 * 2) - round(tgrade, 2), "to get a average of B.")
+	print("You need a minimum score off", + (90 * 2) - round(tgrade, 2), "to get a average of A.")
 elif tgrade > 60 and tgrade < 79.9:
-	print("You need a minimum score off", + (80 * 2) - tgrade, "to get a average of B.")
-	print("You need a minimum score off", + (90 * 2) - tgrade, "to get a average of A.")
+	print("You need a minimum score off", + (80 * 2) - round(tgrade, 2), "to get a average of B.")
+	print("You need a minimum score off", + (90 * 2) - round(tgrade, 2), "to get a average of A.")
 elif tgrade > 80 and tgrade < 89.9:
-	print("You need a minimum score off", + (90 * 2) - tgrade, "to get a average of A.")
+	print("You need a minimum score off", + (90 * 2) - round(tgrade, 2), "to get a average of A.")
 elif tgrade > 90 and tgrade < 100:
 	print("You have already a top score")
 elif tgrade > 100:
