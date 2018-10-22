@@ -1,3 +1,11 @@
+Version 0.1.3
+Check if you are typing in the correct score, not over the max score.
+Fixed a problem with not showing what grade you got if max score.
+Some text is changed.
+
+Version 0.1.2
+Some changes in some text.
+
 Version 0.1.1
 Made all numbers that is printed to have only two digits after comma.
 
@@ -16,8 +24,5 @@ Grade 1:
 		* What grade you need in the next course to go up one level.
 
 Planned future development:
-Version 0.2.0
-	* check if you are in range when you are typing in a score. (not over 100/30 or whatever the max score is.)
-
-Version unknown:
+	* Add IIS and PAC when it is time to get our grades in those courses.
 	* read and save from file 
