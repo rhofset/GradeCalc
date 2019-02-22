@@ -1,0 +1,18 @@
+Lage oop av det som er fra før av.
+
+Meny:
+    - lese fra file og se hva som er lagt inn tidligere.
+    - få spørsmål om å lagre til fil når man har lagt inn alle variabler.
+
+- Problemer når mange fag har forskjellige vektinger.
+- dictionary?
+
+
+
+functioner og klasser:
+
+GradeCalc
+    - åpne fil
+    - lagre til fil.
+    - lese inn variabler
+    - 

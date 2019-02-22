@@ -9,9 +9,50 @@ __maintainer__ = "Runar Hofset"
 __email__ = "rhofset@gmail.com"
 __status__ = "Development"
 
+
+def __init__():
+	pass
+
+def main ():
+	"""
+	Main menu with choices
+	"""
+	menu()
+	menuinput = input("Type in your choice: ")
+	while menuinput.lower != "exit":
+		if menuinput == "1":
+			print("\nMenu 1 is working\n")
+			main()
+		elif menuinput == "2":
+			print("\nMenu 2 is working\n")
+			menu2()
+		else:
+			exit()
+
+def menu1():
+	pass
+
+def menu2():
+	courses = input("How many corses do you have")
+	if courses.isdigit == True:
+		
+	print(courses)
+
+def menu():
+	"""
+	Just the menu print.
+	"""
+	menu = ["1. load from file?",
+			"2. Make a new file?"]
+	for item in menu:
+		print(item)
+
+if __name__ == "__main__":
+	main()
+
+"""
 # Text explaining what this program is doing
-print("Calculate grade for Project Based Learning, use . as ,")
-print()
+print("Calculate average grade for your grades at Noroff, use . as ,""\n")
 
 # Enter your score/grade i each assessment of PBL
 
@@ -154,3 +195,4 @@ elif tgrade > 90 and tgrade < 100:
 elif tgrade > 100:
 	print("You have typed some wrong numbers! :-)")
 print()
+"""
