@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
 __author__ = "Runar Hofset"
-__copyright__ = "Copyright 2018, Runar Hofset"
+__copyright__ = "Copyright 2019, Runar Hofset"
 __credits__ = ["Runar Hofset"]
 __license__ = "GPL"
-__version__ = "0.1.3"
+__version__ = "0.1.4"
 __maintainer__ = "Runar Hofset"
 __email__ = "rhofset@gmail.com"
 __status__ = "Development"
@@ -16,7 +16,6 @@ print()
 # Enter your score/grade i each assessment of PBL
 
 PBLassessment_1 = float(input("Enter your score off 100 points in PBL assessment 1:  "))
-
 while PBLassessment_1 > 100:
 	print("Your number is to high. Maximum is 100")
 	PBLassessment_1 = float(input("Enter your score off 100 points in PBL assessment 1:  "))
@@ -24,7 +23,6 @@ else:
 	print("Your score in assessment 1", PBLassessment_1)
 
 PBLassessment_2 = float(input("Enter your score off 100 points in PBL assessment 2:  "))
-
 while PBLassessment_2 > 100:
 	print("Your number is to high. Maximum is 100")
 	PBLassessment_2 = float(input("Enter your score off 100 points in PBL assessment 2:  "))
@@ -32,20 +30,64 @@ else:
 	print("Your score in assessment 2", PBLassessment_2)
 
 PBLassessment_3 = float(input("Enter your score off 100 points in PBL assessment 3:  "))
-
 while PBLassessment_3 > 30:
 	print("Your number is to high. Maximum is 30")
 	PBLassessment_3 = float(input("Enter your score off 30 points in PBL assessment 3:  "))
 else:
 	print("Your score in assessment 3:", PBLassessment_3)
 
+ISSassessment_1 = float(input("Enter your score off 100 points in ISS assessment 1:  "))
+while ISSassessment_1 > 100:
+	print("Your number is to high. Maximum is 100")
+	ISSassessment_1 = float(input("Enter your score off 100 points in ISS assessment 1:  "))
+else:
+	print("Your score in assessment 3:", ISSassessment_1)
+
+ISSassessment_2 = float(input("Enter your score off 100 points in ISS assessment 2:  "))
+while ISSassessment_2 > 100:
+	print("Your number is to high. Maximum is 100")
+	ISSassessment_2 = float(input("Enter your score off 30 points in ISS assessment 2:  "))
+else:
+	print("Your score in assessment 3:", ISSassessment_2)
+
+PACassessment_1 = float(input("Enter your score off 100 points in PAC assessment 1:  "))
+while PACassessment_1 > 100:
+	print("Your number is to high. Maximum is 100")
+	PACassessment_1 = float(input("Enter your score off 100 points in PAC assessment 1:  "))
+else:
+	print("Your score in assessment 3:", PACassessment_1)
+
+PACassessment_2 = float(input("Enter your score off 100 points in PAC assessment 2:  "))
+while PACassessment_2 > 100:
+	print("Your number is to high. Maximum is 100")
+	PACassessment_2 = float(input("Enter your score off 100 points in PAC assessment 2:  "))
+else:
+	print("Your score in assessment 3:", PACassessment_2)
+
+PACassessment_3 = float(input("Enter your score off 30 points in PAC assessment 3:  "))
+while PACassessment_3 > 30:
+	print("Your number is to high. Maximum is 30")
+	PACassessment_3 = float(input("Enter your score off 30 points in PAC assessment 3:  "))
+else:
+	print("Your score in assessment 3:", PACassessment_3)
+
 # calculate your score/grade, and check if your score is valid.
 PBL1 = (PBLassessment_1 * 0.2) + (PBLassessment_2 * 0.6) + (((PBLassessment_3 / 30) * 100)* 0.2)
 if PBL1 > 100:
 	print("You have input some wrong numbers somewhere!! Try again!")
+ISS1 = (ISSassessment_1 * 0.2) + (ISSassessment_2 * 0.8)
+if ISS1 > 100:
+	print("You have input some wrong numbers somewhere!! Try again!")
+PAC1 = (PACassessment_1 * 0.2) + (PACassessment_2 * 0.6) + (((PACassessment_3 / 30) * 100) * 0.2)
+if PAC1 > 100:
+	print("You have input some wrong numbers somewhere!! Try again!")
 
 # print to screen the total score/grade
-tgrade = PBL1
+print()
+print("PBL score = ", round(PBL1, 2))
+print("ISS score = ", round(ISS1, 2))
+print("PAC score = ",round(PAC1, 2))
+tgrade = (PBL1 + ISS1 + PAC1)/3
 print()
 print("You got", + round(tgrade, 2), "of 100")
 
